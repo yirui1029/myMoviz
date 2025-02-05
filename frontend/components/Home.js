@@ -11,7 +11,7 @@ function Home() {
   const [decouvertMovies, setDecouvertMovies]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:3000/movies')
+    fetch('https://my-moviz-smoky.vercel.app/movies')
     .then(reponse=>reponse.json())
     .then(data=>{
       setDecouvertMovies(data.movies);
